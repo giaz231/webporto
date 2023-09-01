@@ -9,7 +9,7 @@ export default {
       colors: {
         lightBlue: "#BFEFFF",
         hardBlue: "#008cdb",
-        green: "#00b9d1",
+        green: "#00b3d6",
       },
     },
   },

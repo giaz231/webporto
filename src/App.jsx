@@ -1,13 +1,75 @@
 import "./App.css";
-import foto from "../src/assets/fotoGiyas.png";
-import fotoHero from "../src/assets/bgHero2.jpg";
-import ikuzsport from "../src/assets/ikuzsport.png";
-import airbnbClone from "../src/assets/airbnbClone.png";
-import dashboard from "../src/assets/dashboard.png";
+import foto from "/fotoGiyas.png";
+import fotoHero from "/bgHero2.jpg";
+import ikuzsport from "/ikuzsport.png";
+import airbnbClone from "/airbnbclone.png";
+import dashboard from "/dashboard.png";
+import chakraUi from "/chakra-ui.png";
+import figma from "/figma.png";
+import github from "/github.png";
 
 function App() {
   return (
     <>
+      <div className="mx-28 sticky top-0 z-10">
+        <div className="navbar border-2  bg-base-100 shadow-xl rounded-3xl h-28 ">
+          <div className="navbar-start">
+            <div className="dropdown">
+              <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a>About</a>
+                </li>
+                <li>
+                  <a>Project</a>
+                </li>
+                <li>
+                  <a>Work Experience</a>
+                </li>
+                <li>
+                  <a>Certifications</a>
+                </li>
+              </ul>
+            </div>
+            <a className="btn btn-ghost normal-case text-2xl"> </a>
+          </div>
+          <div className="navbar-center hidden lg:flex">
+            <ul className="text-2xl  menu menu-horizontal px-1">
+              <li>
+                <a>About</a>
+              </li>
+              <li>
+                <a>Project</a>
+              </li>
+              <li>
+                <a>Work Experience</a>
+              </li>
+              <li>
+                <a>Certifications</a>
+              </li>
+            </ul>
+          </div>
+          <div className="navbar-end"></div>
+        </div>
+      </div>
       <div className="m-28 font-plus-jak">
         <section>
           <div
@@ -16,34 +78,47 @@ function App() {
               backgroundImage: `url(${fotoHero})`,
             }}
           >
-            <div className="hero-content flex-col lg:flex-row">
-              <img src={foto} className="max-w-sm rounded-lg shadow-2xl" />
+            <div className="hero-content flex-col lg:flex-row gap-10">
+              <img
+                src={foto}
+                className="max-w-sm rounded-full shadow-2xl bg-white"
+              />
               <div>
                 <h1 className="text-5xl font-bold text-black">
                   Muhammad Ghiyats Shufy
                 </h1>
-                <p className="py-6 text-black  ">
-                  Enthusiast Developer with Product Operational Specialist
-                  experience at a software company in the Jakarta City Hall. I
-                  was responsible for the system implementation and maintenance
-                  web apps, leading a team of 5 Product Operational Specialist
-                  (POS). I developed several project such as KSBB, SmartChange
-                  and partial fiture CRM V1. Working closely with some
-                  developers, I gained interest in programming area so I decided
-                  to join Alterra Academy Frontend Bootcamp. I built several
-                  project as FE engineer using ReactJS, NextJS and several UI
-                  such as Tailwind CSS, Bootstrap, Daisy UI, Chakra UI. Strive
-                  for perfection. Familiar with tight deadline and flexible
-                  working hour, I'm excited to join company which could
-                  challenge my skills.
-                </p>
+                <div className="py-6">
+                  <p className="text-lg mb-5">
+                    Enthusiast Developer with Product Operational Specialist
+                    experience at a software company in the Jakarta City Hall. I
+                    was responsible for the system implementation and
+                    maintenance web apps, leading a team of 5 Product
+                    Operational Specialist (POS).{" "}
+                  </p>
+                  <p className="text-lg mb-5">
+                    I developed several project such as KSBB, SmartChange and
+                    partial fiture CRM V1. Working closely with some developers,
+                    I gained interest in programming area so I decided to join
+                    Alterra Academy Frontend Bootcamp.
+                  </p>
+                  <p className="text-lg mb-5">
+                    I built several project as FE engineer using ReactJS, NextJS
+                    and several UI such as Tailwind CSS, Bootstrap, Daisy UI,
+                    Chakra UI. Strive for perfection. Familiar with tight
+                    deadline and flexible working hour, I'm excited to join
+                    company which could challenge my skills.
+                  </p>
+                </div>
                 <button className="btn btn-primary">Get To Know Me</button>
               </div>
             </div>
           </div>
         </section>
-        <div className="m-10 p-14 bg-lightBlue shadow-2xl rounded-2xl text-hardBlue font-bold text-6xl text-center">
-          Projects
+        <div className="my-24 bg-white  font-bold text-5xl ">
+          The Tech I Muster
+        </div>
+        <div className="my-24 bg-white  font-bold text-5xl ">
+          My <span className="mx-4"> ̶S̶w̶e̶a̶t̶ ̶a̶n̶d̶ ̶B̶l̶o̶o̶d̶ </span> <br /> Projects
         </div>
         <section className="flex flex-wrap gap-20 justify-center">
           <div className="card w-96 bg-base-100 shadow-xl ">
@@ -111,7 +186,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl image-full">
+          <div className="card w-96 bg-base-100 shadow-xl bg-slate-300">
             <figure>{/*    */}</figure>
             <div className="card-body">
               <h2 className="card-title">Kodiklatal Persuratan</h2>
@@ -130,7 +205,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl image-full">
+          <div className="card w-96 bg-base-100 shadow-xl bg-slate-300">
             <figure>
               {/* <img
                 src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
