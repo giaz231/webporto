@@ -190,7 +190,7 @@ function App() {
             </div>
           </div>
           <section className="flex flex-wrap gap-20 justify-center">
-            <div className="card w-96 bg-base-100 shadow-xl ">
+            <div className="card w-96 bg-white shadow-xl ">
               <figure className="">
                 <img src={ikuzsport} alt="logo" />
               </figure>
@@ -212,7 +212,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="card w-96 bg-base-100 shadow-xl ">
+            <div className="card w-96 bg-white shadow-xl ">
               <figure className="">
                 <img src={airbnbClone} alt="Screenshot" />
               </figure>
@@ -234,7 +234,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-white shadow-xl">
               <figure>
                 <img src={dashboard} alt="logo" />
               </figure>
@@ -255,7 +255,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="card w-96 bg-base-100 shadow-xl ">
+            <div className="card w-96 bg-white shadow-xl ">
               <figure>{/*    */}</figure>
               <div className="card-body">
                 <h2 className="card-title">Kodiklatal Persuratan</h2>
@@ -275,7 +275,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="card w-96 bg-base-100 shadow-xl ">
+            <div className="card w-96 bg-white shadow-xl ">
               <figure>
                 {/* <img
                 src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
