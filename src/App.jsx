@@ -78,7 +78,7 @@ function App() {
           <div className="navbar-end"></div>
         </div>
       </div>
-      <div className="m-28 font-plus-jak">
+      <div className="m-28 font-plus-jak bg-white">
         <section>
           <div
             className="hero rounded-3xl min-h-screen bg-zinc-300"
