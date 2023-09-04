@@ -19,30 +19,49 @@ import certif from "/certificate.png";
 function App() {
   return (
     <>
-      <div className="mx-28 sticky top-0 z-10">
-        <div className="navbar border-2  bg-base-100 shadow-xl rounded-3xl h-28 ">
-          <div className="navbar-start">
-            <div className="dropdown">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+      <div className="bg-white">
+        <div className="mx-28 sticky top-0 z-10">
+          <div className="navbar border-2  bg-base-100 shadow-xl rounded-3xl h-28 ">
+            <div className="navbar-start">
+              <div className="dropdown">
+                <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
+                  <li>
+                    <a>About</a>
+                  </li>
+                  <li>
+                    <a>Project</a>
+                  </li>
+                  <li>
+                    <a>Work Experience</a>
+                  </li>
+                  <li>
+                    <a>Certifications</a>
+                  </li>
+                </ul>
+              </div>
+              <a className="btn btn-ghost normal-case "> </a>
+            </div>
+            <div className="navbar-center hidden lg:flex">
+              <ul className="text-xl  menu menu-horizontal px-1">
                 <li>
                   <a>About</a>
                 </li>
@@ -57,426 +76,410 @@ function App() {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost normal-case "> </a>
+            <div className="navbar-end"></div>
           </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="text-xl  menu menu-horizontal px-1">
-              <li>
-                <a>About</a>
-              </li>
-              <li>
-                <a>Project</a>
-              </li>
-              <li>
-                <a>Work Experience</a>
-              </li>
-              <li>
-                <a>Certifications</a>
-              </li>
-            </ul>
-          </div>
-          <div className="navbar-end"></div>
         </div>
-      </div>
-      <div className="m-28 font-plus-jak bg-white">
-        <section>
-          <div
-            className="hero rounded-3xl min-h-screen bg-zinc-300"
-            style={{
-              backgroundImage: `url(${fotoHero})`,
-            }}
-          >
-            <div className="hero-content flex-col lg:flex-row gap-10">
-              <img
-                src={foto}
-                className="max-w-sm rounded-full shadow-2xl bg-white"
-              />
-              <div>
-                <h1 className="text-4xl font-bold text-black">
-                  Muhammad Ghiyats Shufy
-                </h1>
-                <div className="py-6">
-                  <p className="text-md mb-5">
-                    Enthusiast Developer with Product Operational Specialist
-                    experience at a software company in the Jakarta City Hall. I
-                    was responsible for the system implementation and
-                    maintenance web apps, leading a team of 5 Product
-                    Operational Specialist (POS).
-                  </p>
-                  <p className="text-md mb-5">
-                    I developed several project such as KSBB, SmartChange and
-                    partial fiture CRM V1. Working closely with some developers,
-                    I gained interest in programming area so I decided to join
-                    Alterra Academy Frontend Bootcamp.
-                  </p>
-                  <p className="text-md mb-5">
-                    I built several project as FE engineer using ReactJS, NextJS
-                    and several UI such as Tailwind CSS, Bootstrap, Daisy UI,
-                    Chakra UI. Strive for perfection. Familiar with tight
-                    deadline and flexible working hour, I'm excited to join
-                    company which could challenge my skills.
-                  </p>
+        <div className="m-28 font-plus-jak ">
+          <section>
+            <div
+              className="hero rounded-3xl min-h-screen bg-zinc-300"
+              style={{
+                backgroundImage: `url(${fotoHero})`,
+              }}
+            >
+              <div className="hero-content flex-col lg:flex-row gap-10">
+                <img
+                  src={foto}
+                  className="max-w-sm rounded-full shadow-2xl bg-white"
+                />
+                <div>
+                  <h1 className="text-4xl font-bold text-black">
+                    Muhammad Ghiyats Shufy
+                  </h1>
+                  <div className="py-6">
+                    <p className="text-md mb-5">
+                      Enthusiast Developer with Product Operational Specialist
+                      experience at a software company in the Jakarta City Hall.
+                      I was responsible for the system implementation and
+                      maintenance web apps, leading a team of 5 Product
+                      Operational Specialist (POS).
+                    </p>
+                    <p className="text-md mb-5">
+                      I developed several project such as KSBB, SmartChange and
+                      partial fiture CRM V1. Working closely with some
+                      developers, I gained interest in programming area so I
+                      decided to join Alterra Academy Frontend Bootcamp.
+                    </p>
+                    <p className="text-md mb-5">
+                      I built several project as FE engineer using ReactJS,
+                      NextJS and several UI such as Tailwind CSS, Bootstrap,
+                      Daisy UI, Chakra UI. Strive for perfection. Familiar with
+                      tight deadline and flexible working hour, I'm excited to
+                      join company which could challenge my skills.
+                    </p>
+                  </div>
+                  <button className=" btn bg-hardBlue text-white hover:bg-green">
+                    Get To Know Me
+                  </button>
                 </div>
-                <button className=" btn bg-hardBlue text-white hover:bg-green">
-                  Get To Know Me
-                </button>
               </div>
             </div>
-          </div>
-        </section>
-        <section className="flex items-center mt-20 mb-20  pt-10 pb-10">
-          <div className="my-24 bg-white  font-bold text-5xl ">
-            The Tech I Muster
-          </div>
-
-          <div className="flex flex-wrap  items-center gap-4">
-            <div className="flex flex-wrap  items-center gap-4">
-              <img className="w-100 h-24" src={github} alt="" />{" "}
-              <span className="text-xl">Github</span>
-            </div>
-            <div className="flex flex-wrap  items-center gap-4">
-              <img className="w-100 h-24" src={mysql} alt="" />{" "}
-              <span className="text-xl">MySQL</span>
-            </div>
-          </div>
-          <div className="flex flex-wrap  items-center gap-4">
-            <div className="flex flex-wrap  items-center gap-4">
-              <img className="w-100 h-24" src={nodejs} alt="" />{" "}
-              <span className="text-xl">NodeJS</span>
+          </section>
+          <section className="flex items-center mt-20 mb-20  pt-10 pb-10">
+            <div className="my-24 bg-white  font-bold text-5xl ">
+              The Tech I Muster
             </div>
 
             <div className="flex flex-wrap  items-center gap-4">
-              <img className="w-100 h-24" src={figma} alt="" />{" "}
-              <span className="text-xl">Figma</span>
+              <div className="flex flex-wrap  items-center gap-4">
+                <img className="w-100 h-24" src={github} alt="" />{" "}
+                <span className="text-xl">Github</span>
+              </div>
+              <div className="flex flex-wrap  items-center gap-4">
+                <img className="w-100 h-24" src={mysql} alt="" />{" "}
+                <span className="text-xl">MySQL</span>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-wrap  items-center gap-4  ">
             <div className="flex flex-wrap  items-center gap-4">
-              <img className="w-100 h-24" src={js} alt="" />{" "}
-              <span className="text-xl">Javascript</span>
-            </div>
+              <div className="flex flex-wrap  items-center gap-4">
+                <img className="w-100 h-24" src={nodejs} alt="" />{" "}
+                <span className="text-xl">NodeJS</span>
+              </div>
 
-            <div className="flex flex-wrap  items-center gap-4">
-              <img className="w-100 h-24" src={react} alt="" />{" "}
-              <span className="text-xl">React</span>
-            </div>
-          </div>
-          <div className="flex flex-wrap  items-center gap-4  ">
-            <div className="flex flex-wrap  items-center gap-4">
-              <img className="w-28 h-24" src={tailwind} alt="" />{" "}
-              <span className="text-xl">Tailwind</span>
-            </div>
-            <div className="flex flex-wrap  items-center gap-4">
-              <img className="w-100 h-24" src={postman} alt="" />{" "}
-              <span className="text-xl">Postman</span>
-            </div>
-          </div>
-        </section>
-        <div className="my-24 py-10">
-          <div className=" bg-white my-5 font-bold text-5xl text-center">
-            <p>
-              My <span className="mx-4"> ̶S̶w̶e̶a̶t̶ ̶a̶n̶d̶ ̶B̶l̶o̶o̶d̶ </span> Projects{" "}
-            </p>
-          </div>
-          <div className="text-center">
-            <p>
-              <span>
-                Based on my work experiencei have plenty of product management
-              </span>{" "}
-              <br />
-              project but for this porto i only put programming project
-            </p>
-          </div>
-        </div>
-        <section className="flex flex-wrap gap-20 justify-center">
-          <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure className="">
-              <img src={ikuzsport} alt="logo" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Airbnb Clone Project</h2>
-              <p className="mb-5">
-                Airbnb Clone Project is a website that provides hotels or
-                homestays for rent when people are on vacation. The feature that
-                I cloned was creating boards, lists, and cards. The technologies
-                at the frontend side we use was NextJS, Tailwind css, and
-                DaisyUI.
-              </p>
-              <div className="card-actions justify-end">
-                <a href="https://github.com/Capstone-Project-Group3-Ikuzports/FE-Ikuzports-CapstoneProject">
-                  <button className="btn bg-hardBlue text-white hover:bg-green">
-                    Check the source code
-                  </button>
-                </a>
+              <div className="flex flex-wrap  items-center gap-4">
+                <img className="w-100 h-24" src={figma} alt="" />{" "}
+                <span className="text-xl">Figma</span>
               </div>
             </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure className="">
-              <img src={airbnbClone} alt="Screenshot" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Airbnb Clone Project</h2>
-              <p className="mb-5">
-                Airbnb Clone Project is a website that provides hotels or
-                homestays for rent when people are on vacation. The feature that
-                I cloned was creating boards, lists, and cards. The technologies
-                at the frontend side we use was NextJS, Tailwind css, and
-                DaisyUI.
-              </p>
-              <div className="card-actions justify-end">
-                <a href="https://github.com/Property-Marketplace-Air-BnB-Clone-App/AirBnB-Clone-App">
-                  <button className="btn bg-hardBlue text-white hover:bg-green">
-                    Check the source code
-                  </button>
-                </a>
+            <div className="flex flex-wrap  items-center gap-4  ">
+              <div className="flex flex-wrap  items-center gap-4">
+                <img className="w-100 h-24" src={js} alt="" />{" "}
+                <span className="text-xl">Javascript</span>
+              </div>
+
+              <div className="flex flex-wrap  items-center gap-4">
+                <img className="w-100 h-24" src={react} alt="" />{" "}
+                <span className="text-xl">React</span>
               </div>
             </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src={dashboard} alt="logo" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Alterra Dashboard</h2>
-              <p className="mb-5">
-                Alterra dashboard is a project for cloning the Altera dashboard
-                website. The feature that I create is a list feature, and cards.
-                The technologies at the frontend side we use was ReactJS,
-                Tailwindcss, and DaisyUI
-              </p>
-              <div className="card-actions justify-end">
-                <a href="https://github.com/ImmersiveDashboard/FE-Project-2">
-                  <button className="btn bg-hardBlue text-white hover:bg-green">
-                    Check the source code
-                  </button>
-                </a>
+            <div className="flex flex-wrap  items-center gap-4  ">
+              <div className="flex flex-wrap  items-center gap-4">
+                <img className="w-28 h-24" src={tailwind} alt="" />{" "}
+                <span className="text-xl">Tailwind</span>
+              </div>
+              <div className="flex flex-wrap  items-center gap-4">
+                <img className="w-100 h-24" src={postman} alt="" />{" "}
+                <span className="text-xl">Postman</span>
               </div>
             </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure>{/*    */}</figure>
-            <div className="card-body">
-              <h2 className="card-title">Kodiklatal Persuratan</h2>
-              <p className="mb-5">
-                Dashboard about mailing sytem at Kodiklatal TNI , in the era of
-                digitization 3.0, physical correspondence has begun to be
-                abandoned. then a system of internal correspondence was formed
-                in the TNI Kodiklat The technologies we use was Laravel , Mysql.
+          </section>
+          <div className="my-24 py-10">
+            <div className=" bg-white my-5 font-bold text-5xl text-center">
+              <p>
+                My <span className="mx-4"> ̶S̶w̶e̶a̶t̶ ̶a̶n̶d̶ ̶B̶l̶o̶o̶d̶ </span> Projects{" "}
               </p>
-              <div className="card-actions justify-end">
-                <a href="https://github.com/giaz231/Kodiklatal-TNI">
-                  <button className="btn bg-hardBlue text-white hover:bg-green">
-                    Check the source code
-                  </button>
-                </a>
-              </div>
+            </div>
+            <div className="text-center">
+              <p>
+                <span>
+                  Based on my work experiencei have plenty of product management
+                </span>{" "}
+                <br />
+                project but for this porto i only put programming project
+              </p>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure>
-              {/* <img
+          <section className="flex flex-wrap gap-20 justify-center">
+            <div className="card w-96 bg-base-100 shadow-xl ">
+              <figure className="">
+                <img src={ikuzsport} alt="logo" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Airbnb Clone Project</h2>
+                <p className="mb-5">
+                  Airbnb Clone Project is a website that provides hotels or
+                  homestays for rent when people are on vacation. The feature
+                  that I cloned was creating boards, lists, and cards. The
+                  technologies at the frontend side we use was NextJS, Tailwind
+                  css, and DaisyUI.
+                </p>
+                <div className="card-actions justify-end">
+                  <a href="https://github.com/Capstone-Project-Group3-Ikuzports/FE-Ikuzports-CapstoneProject">
+                    <button className="btn bg-hardBlue text-white hover:bg-green">
+                      Check the source code
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card w-96 bg-base-100 shadow-xl ">
+              <figure className="">
+                <img src={airbnbClone} alt="Screenshot" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Airbnb Clone Project</h2>
+                <p className="mb-5">
+                  Airbnb Clone Project is a website that provides hotels or
+                  homestays for rent when people are on vacation. The feature
+                  that I cloned was creating boards, lists, and cards. The
+                  technologies at the frontend side we use was NextJS, Tailwind
+                  css, and DaisyUI.
+                </p>
+                <div className="card-actions justify-end">
+                  <a href="https://github.com/Property-Marketplace-Air-BnB-Clone-App/AirBnB-Clone-App">
+                    <button className="btn bg-hardBlue text-white hover:bg-green">
+                      Check the source code
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card w-96 bg-base-100 shadow-xl">
+              <figure>
+                <img src={dashboard} alt="logo" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Alterra Dashboard</h2>
+                <p className="mb-5">
+                  Alterra dashboard is a project for cloning the Altera
+                  dashboard website. The feature that I create is a list
+                  feature, and cards. The technologies at the frontend side we
+                  use was ReactJS, Tailwindcss, and DaisyUI
+                </p>
+                <div className="card-actions justify-end">
+                  <a href="https://github.com/ImmersiveDashboard/FE-Project-2">
+                    <button className="btn bg-hardBlue text-white hover:bg-green">
+                      Check the source code
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card w-96 bg-base-100 shadow-xl ">
+              <figure>{/*    */}</figure>
+              <div className="card-body">
+                <h2 className="card-title">Kodiklatal Persuratan</h2>
+                <p className="mb-5">
+                  Dashboard about mailing sytem at Kodiklatal TNI , in the era
+                  of digitization 3.0, physical correspondence has begun to be
+                  abandoned. then a system of internal correspondence was formed
+                  in the TNI Kodiklat The technologies we use was Laravel ,
+                  Mysql.
+                </p>
+                <div className="card-actions justify-end">
+                  <a href="https://github.com/giaz231/Kodiklatal-TNI">
+                    <button className="btn bg-hardBlue text-white hover:bg-green">
+                      Check the source code
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card w-96 bg-base-100 shadow-xl ">
+              <figure>
+                {/* <img
                 src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                 alt="Shoes"
               /> */}
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Koperasipbs</h2>
-              <p>
-                Koperasipbs website is a cooperative website for prospective
-                ship captains who are concerned about retirement. The
-                technologies we use was PHP Native, Mysql.
-              </p>
-              <div className="card-actions justify-end">
-                <a href="https://github.com/giaz231/koperasipbs">
-                  <button className="btn bg-hardBlue text-white hover:bg-green">
-                    Check the source code
-                  </button>
-                </a>
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Koperasipbs</h2>
+                <p>
+                  Koperasipbs website is a cooperative website for prospective
+                  ship captains who are concerned about retirement. The
+                  technologies we use was PHP Native, Mysql.
+                </p>
+                <div className="card-actions justify-end">
+                  <a href="https://github.com/giaz231/koperasipbs">
+                    <button className="btn bg-hardBlue text-white hover:bg-green">
+                      Check the source code
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <div className="my-24 py-10">
-          <div className=" bg-white my-5 font-bold text-5xl text-center">
-            <p>Work Experience</p>
-          </div>
-          <div className="text-center">
-            <p>
-              <span>
-                Had tremendous experience of analis and develope project outside
-                the code
-              </span>
-              <br />
-              for only insipire me to coding
-            </p>
-          </div>
-        </div>
-
-        <section className="flex flex-wrap justify-center">
-          <div className="flex flex-row w-full">
-            <div className="grid p-8 basis-2/5 w-96 card bg-lightBlue rounded-box place-items-center">
-              <ul className="list-disc grid gap-2">
-                <li className="list-none mb-4">
-                  <span className="font-bold ">
-                    PRODUCT OPERATIONAL SPECIALIST (TEAM LEADER)
-                  </span>
-                  <br /> Jakarta Smart City (Diskominfotik DKI JAKARTA)
-                </li>
-
-                <li>
-                  Making plans, curriculum, and/or scenarios for technical
-                  guidance/training
-                </li>
-                <li>
-                  Supporting instruments for technical
-                  guidance/socialization/training
-                </li>
-                <li>
-                  Engage and play an active role in System Integration Testing
-                  (SIT), Functional Testing, and User Acceptance Testing (UAT)
-                  for Mobile and/or Dashboard applications
-                </li>
-                <li>
-                  Create a scenario, test case, and perform manual testing for
-                  application or website developed by Jakarta Smart City at
-                  System Integration Testing (SIT), Functional Testing, and User
-                  Acceptance Testing (UAT) environment and also document
-                  (inventory) findings (bugs/issues/requests) during the testing
-                  process
-                </li>
-              </ul>
+          </section>
+          <div className="my-24 py-10">
+            <div className=" bg-white my-5 font-bold text-5xl text-center">
+              <p>Work Experience</p>
             </div>
-            <div className="divider divider-horizontal basis-1/5 ">
-              February 2022 - Present
-            </div>
-            <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
-          </div>
-
-          <div className="flex flex-row w-full">
-            <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
-            <div className="divider divider-horizontal basis-1/5 ">
-              February 2020 - January 2022
-            </div>
-            <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
-              <ul className="list-disc grid gap-2">
-                <li className="list-none mb-4">
-                  <span className="font-bold">
-                    TECHNICAL SUPPORT(TEAM LEADER)
-                  </span>
-                  <br />
-                  Jakarta Smart City (Diskominfotik DKI JAKARTA)
-                </li>
-
-                <li>
-                  Collect and document (inventory): complaints or bugs related
-                  to applications to be coordinated with the Technical Team
-                  (Developer/Programmer); as well as requests submitted by the
-                  applications' users to be coordinated with the Project/Product
-                  Manager and System Analyst
-                </li>
-                <li>
-                  Perform routine checking of application, such as checking API
-                  integration using Postman, and ensuring the application is
-                  operating properly
-                </li>
-                <li>
-                  Arrange socialization/technical guidance/training to users
-                  about application utilization, including preparing
-                  plans/curriculum and compiling supporting instruments
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="flex flex-row w-full">
-            <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
-              <ul className="list-disc grid gap-2">
-                <li className="mb-2 list-none">
-                  <span className="font-bold">ENGINEER ON SITE</span>
-                  <br />
-                  PT. Innovez Singapore
-                </li>
-
-                <li>Maintaning hardware and software system on site</li>
-                <li>
-                  Transfer knowledge about how to use webapp to non IT
-                  users(ship captain)
-                </li>
-                <li>Report bugs to developers</li>
-                <li>Daily report log</li>
-                <li>Implement new digitalization shipping system</li>
-              </ul>
-            </div>
-            <div className="divider divider-horizontal basis-1/5">
-              2018 - 2019
-            </div>
-            <div className="grid h-20 basis-2/5 card  rounded-box place-items-center "></div>
-          </div>
-          <div className="flex flex-row w-full">
-            <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
-            <div className="divider divider-horizontal basis-1/5">
-              2017 - 2018
-            </div>
-            <div className="grid p-8 w-96 basis-2/5 card bg-lightBlue rounded-box place-items-center">
-              <ul className="list-disc grid gap-2">
-                <li className="mb-2 list-none">
-                  <span className="font-bold">PLB/KM</span>
-                  <br />
-                  PT. Transjakarta BUMD
-                </li>
-
-                <li>Operating traffic software bus</li>
-                <li>Maintenance time arriving and deploy at bus stop</li>
-                <li>
-                  High discipline with time sensitive shifting working hour
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <div className="flex flex-row my-20 py-10">
-          <div className="basis-1/2">
-            <img src={certif} alt="" />
-          </div>
-          <div className="basis-1/2 ">
-            <div className=" bg-white my-5 font-bold text-5xl ">
-              <p>Certification</p>
-            </div>
-            <div>
+            <div className="text-center">
               <p>
                 <span>
-                  As tech always going forward , one cant have too much
-                  certificate
+                  Had tremendous experience of analis and develope project
+                  outside the code
                 </span>
+                <br />
+                for only insipire me to coding
               </p>
             </div>
+          </div>
 
-            <ul className=" font-bold my-10">
-              <li className="flex  items-center">
-                <img src={check} alt="" className="w-10" />
-                <span className="px-3">
-                  Oracle : SQL and Extended SQL with Programming Feature (Issued
-                  by Gunadharma University 2016).
-                </span>
-              </li>
+          <section className="flex flex-wrap justify-center">
+            <div className="flex flex-row w-full">
+              <div className="grid p-8 basis-2/5 w-96 card bg-lightBlue rounded-box place-items-center">
+                <ul className="list-disc grid gap-2">
+                  <li className="list-none mb-4">
+                    <span className="font-bold ">
+                      PRODUCT OPERATIONAL SPECIALIST (TEAM LEADER)
+                    </span>
+                    <br /> Jakarta Smart City (Diskominfotik DKI JAKARTA)
+                  </li>
 
-              <li className="flex  items-center">
-                <img src={check} alt="" className="w-10" />
-                <span className="px-3">
-                  Penelitian Ilmiah : Game Berbasis Android Menggunakan Unity
-                  dengan Bahasa pemrograman C# (Issued by Gunadharma University
-                  Jan 2016).
-                </span>
-              </li>
+                  <li>
+                    Making plans, curriculum, and/or scenarios for technical
+                    guidance/training
+                  </li>
+                  <li>
+                    Supporting instruments for technical
+                    guidance/socialization/training
+                  </li>
+                  <li>
+                    Engage and play an active role in System Integration Testing
+                    (SIT), Functional Testing, and User Acceptance Testing (UAT)
+                    for Mobile and/or Dashboard applications
+                  </li>
+                  <li>
+                    Create a scenario, test case, and perform manual testing for
+                    application or website developed by Jakarta Smart City at
+                    System Integration Testing (SIT), Functional Testing, and
+                    User Acceptance Testing (UAT) environment and also document
+                    (inventory) findings (bugs/issues/requests) during the
+                    testing process
+                  </li>
+                </ul>
+              </div>
+              <div className="divider divider-horizontal basis-1/5 ">
+                February 2022 - Present
+              </div>
+              <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
+            </div>
 
-              <li className="flex  items-center">
-                <img src={check} alt="" className="w-10" />
-                <span className="px-3">
-                  Java Programming language Fundamental workshop (Issued by
-                  Gunadharma University 2016).
-                </span>
-              </li>
-            </ul>
+            <div className="flex flex-row w-full">
+              <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
+              <div className="divider divider-horizontal basis-1/5 ">
+                February 2020 - January 2022
+              </div>
+              <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
+                <ul className="list-disc grid gap-2">
+                  <li className="list-none mb-4">
+                    <span className="font-bold">
+                      TECHNICAL SUPPORT(TEAM LEADER)
+                    </span>
+                    <br />
+                    Jakarta Smart City (Diskominfotik DKI JAKARTA)
+                  </li>
+
+                  <li>
+                    Collect and document (inventory): complaints or bugs related
+                    to applications to be coordinated with the Technical Team
+                    (Developer/Programmer); as well as requests submitted by the
+                    applications' users to be coordinated with the
+                    Project/Product Manager and System Analyst
+                  </li>
+                  <li>
+                    Perform routine checking of application, such as checking
+                    API integration using Postman, and ensuring the application
+                    is operating properly
+                  </li>
+                  <li>
+                    Arrange socialization/technical guidance/training to users
+                    about application utilization, including preparing
+                    plans/curriculum and compiling supporting instruments
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex flex-row w-full">
+              <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
+                <ul className="list-disc grid gap-2">
+                  <li className="mb-2 list-none">
+                    <span className="font-bold">ENGINEER ON SITE</span>
+                    <br />
+                    PT. Innovez Singapore
+                  </li>
+
+                  <li>Maintaning hardware and software system on site</li>
+                  <li>
+                    Transfer knowledge about how to use webapp to non IT
+                    users(ship captain)
+                  </li>
+                  <li>Report bugs to developers</li>
+                  <li>Daily report log</li>
+                  <li>Implement new digitalization shipping system</li>
+                </ul>
+              </div>
+              <div className="divider divider-horizontal basis-1/5">
+                2018 - 2019
+              </div>
+              <div className="grid h-20 basis-2/5 card  rounded-box place-items-center "></div>
+            </div>
+            <div className="flex flex-row w-full">
+              <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
+              <div className="divider divider-horizontal basis-1/5">
+                2017 - 2018
+              </div>
+              <div className="grid p-8 w-96 basis-2/5 card bg-lightBlue rounded-box place-items-center">
+                <ul className="list-disc grid gap-2">
+                  <li className="mb-2 list-none">
+                    <span className="font-bold">PLB/KM</span>
+                    <br />
+                    PT. Transjakarta BUMD
+                  </li>
+
+                  <li>Operating traffic software bus</li>
+                  <li>Maintenance time arriving and deploy at bus stop</li>
+                  <li>
+                    High discipline with time sensitive shifting working hour
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <div className="flex flex-row my-20 py-10">
+            <div className="basis-1/2">
+              <img src={certif} alt="" />
+            </div>
+            <div className="basis-1/2 ">
+              <div className=" bg-white my-5 font-bold text-5xl ">
+                <p>Certification</p>
+              </div>
+              <div>
+                <p>
+                  <span>
+                    As tech always going forward , one cant have too much
+                    certificate
+                  </span>
+                </p>
+              </div>
+
+              <ul className=" font-bold my-10">
+                <li className="flex  items-center">
+                  <img src={check} alt="" className="w-10" />
+                  <span className="px-3">
+                    Oracle : SQL and Extended SQL with Programming Feature
+                    (Issued by Gunadharma University 2016).
+                  </span>
+                </li>
+
+                <li className="flex  items-center">
+                  <img src={check} alt="" className="w-10" />
+                  <span className="px-3">
+                    Penelitian Ilmiah : Game Berbasis Android Menggunakan Unity
+                    dengan Bahasa pemrograman C# (Issued by Gunadharma
+                    University Jan 2016).
+                  </span>
+                </li>
+
+                <li className="flex  items-center">
+                  <img src={check} alt="" className="w-10" />
+                  <span className="px-3">
+                    Java Programming language Fundamental workshop (Issued by
+                    Gunadharma University 2016).
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
