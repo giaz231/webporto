@@ -3,6 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      listStyleImage: { checkmark: 'url("/check.png")' },
       fontFamily: {
         "plus-jak": ['"Plus Jakarta Sans"', "sans"],
       },

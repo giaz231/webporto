@@ -4,9 +4,17 @@ import fotoHero from "/bgHero2.jpg";
 import ikuzsport from "/ikuzsport.png";
 import airbnbClone from "/airbnbclone.png";
 import dashboard from "/dashboard.png";
-import chakraUi from "/chakra-ui.png";
 import figma from "/figma.png";
 import github from "/github.png";
+import js from "/js.png";
+import mysql from "/mysql.png";
+import nodejs from "/nodeJS.png";
+import react from "/react.png";
+import tailwind from "/tailwind.png";
+import postman from "/postman.png";
+// import { BsFillCheckCircleFill } from "react-icons/bs";
+import check from "/check.png";
+import certif from "/certificate.png";
 
 function App() {
   return (
@@ -49,10 +57,10 @@ function App() {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-2xl"> </a>
+            <a className="btn btn-ghost normal-case "> </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="text-2xl  menu menu-horizontal px-1">
+            <ul className="text-xl  menu menu-horizontal px-1">
               <li>
                 <a>About</a>
               </li>
@@ -84,24 +92,24 @@ function App() {
                 className="max-w-sm rounded-full shadow-2xl bg-white"
               />
               <div>
-                <h1 className="text-5xl font-bold text-black">
+                <h1 className="text-4xl font-bold text-black">
                   Muhammad Ghiyats Shufy
                 </h1>
                 <div className="py-6">
-                  <p className="text-lg mb-5">
+                  <p className="text-md mb-5">
                     Enthusiast Developer with Product Operational Specialist
                     experience at a software company in the Jakarta City Hall. I
                     was responsible for the system implementation and
                     maintenance web apps, leading a team of 5 Product
-                    Operational Specialist (POS).{" "}
+                    Operational Specialist (POS).
                   </p>
-                  <p className="text-lg mb-5">
+                  <p className="text-md mb-5">
                     I developed several project such as KSBB, SmartChange and
                     partial fiture CRM V1. Working closely with some developers,
                     I gained interest in programming area so I decided to join
                     Alterra Academy Frontend Bootcamp.
                   </p>
-                  <p className="text-lg mb-5">
+                  <p className="text-md mb-5">
                     I built several project as FE engineer using ReactJS, NextJS
                     and several UI such as Tailwind CSS, Bootstrap, Daisy UI,
                     Chakra UI. Strive for perfection. Familiar with tight
@@ -109,16 +117,76 @@ function App() {
                     company which could challenge my skills.
                   </p>
                 </div>
-                <button className="btn btn-primary">Get To Know Me</button>
+                <button className=" btn bg-hardBlue text-white hover:bg-green">
+                  Get To Know Me
+                </button>
               </div>
             </div>
           </div>
         </section>
-        <div className="my-24 bg-white  font-bold text-5xl ">
-          The Tech I Muster
-        </div>
-        <div className="my-24 bg-white  font-bold text-5xl ">
-          My <span className="mx-4"> ̶S̶w̶e̶a̶t̶ ̶a̶n̶d̶ ̶B̶l̶o̶o̶d̶ </span> <br /> Projects
+        <section className="flex items-center mt-20 mb-20  pt-10 pb-10">
+          <div className="my-24 bg-white  font-bold text-5xl ">
+            The Tech I Muster
+          </div>
+
+          <div className="flex flex-wrap  items-center gap-4">
+            <div className="flex flex-wrap  items-center gap-4">
+              <img className="w-100 h-24" src={github} alt="" />{" "}
+              <span className="text-xl">Github</span>
+            </div>
+            <div className="flex flex-wrap  items-center gap-4">
+              <img className="w-100 h-24" src={mysql} alt="" />{" "}
+              <span className="text-xl">MySQL</span>
+            </div>
+          </div>
+          <div className="flex flex-wrap  items-center gap-4">
+            <div className="flex flex-wrap  items-center gap-4">
+              <img className="w-100 h-24" src={nodejs} alt="" />{" "}
+              <span className="text-xl">NodeJS</span>
+            </div>
+
+            <div className="flex flex-wrap  items-center gap-4">
+              <img className="w-100 h-24" src={figma} alt="" />{" "}
+              <span className="text-xl">Figma</span>
+            </div>
+          </div>
+          <div className="flex flex-wrap  items-center gap-4  ">
+            <div className="flex flex-wrap  items-center gap-4">
+              <img className="w-100 h-24" src={js} alt="" />{" "}
+              <span className="text-xl">Javascript</span>
+            </div>
+
+            <div className="flex flex-wrap  items-center gap-4">
+              <img className="w-100 h-24" src={react} alt="" />{" "}
+              <span className="text-xl">React</span>
+            </div>
+          </div>
+          <div className="flex flex-wrap  items-center gap-4  ">
+            <div className="flex flex-wrap  items-center gap-4">
+              <img className="w-28 h-24" src={tailwind} alt="" />{" "}
+              <span className="text-xl">Tailwind</span>
+            </div>
+            <div className="flex flex-wrap  items-center gap-4">
+              <img className="w-100 h-24" src={postman} alt="" />{" "}
+              <span className="text-xl">Postman</span>
+            </div>
+          </div>
+        </section>
+        <div className="my-24 py-10">
+          <div className=" bg-white my-5 font-bold text-5xl text-center">
+            <p>
+              My <span className="mx-4"> ̶S̶w̶e̶a̶t̶ ̶a̶n̶d̶ ̶B̶l̶o̶o̶d̶ </span> Projects{" "}
+            </p>
+          </div>
+          <div className="text-center">
+            <p>
+              <span>
+                Based on my work experiencei have plenty of product management
+              </span>{" "}
+              <br />
+              project but for this porto i only put programming project
+            </p>
+          </div>
         </div>
         <section className="flex flex-wrap gap-20 justify-center">
           <div className="card w-96 bg-base-100 shadow-xl ">
@@ -127,7 +195,7 @@ function App() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Airbnb Clone Project</h2>
-              <p>
+              <p className="mb-5">
                 Airbnb Clone Project is a website that provides hotels or
                 homestays for rent when people are on vacation. The feature that
                 I cloned was creating boards, lists, and cards. The technologies
@@ -136,8 +204,8 @@ function App() {
               </p>
               <div className="card-actions justify-end">
                 <a href="https://github.com/Capstone-Project-Group3-Ikuzports/FE-Ikuzports-CapstoneProject">
-                  <button className="btn btn-primary">
-                    Check the source codee
+                  <button className="btn bg-hardBlue text-white hover:bg-green">
+                    Check the source code
                   </button>
                 </a>
               </div>
@@ -149,7 +217,7 @@ function App() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Airbnb Clone Project</h2>
-              <p>
+              <p className="mb-5">
                 Airbnb Clone Project is a website that provides hotels or
                 homestays for rent when people are on vacation. The feature that
                 I cloned was creating boards, lists, and cards. The technologies
@@ -158,8 +226,8 @@ function App() {
               </p>
               <div className="card-actions justify-end">
                 <a href="https://github.com/Property-Marketplace-Air-BnB-Clone-App/AirBnB-Clone-App">
-                  <button className="btn btn-primary">
-                    Check the source codee
+                  <button className="btn bg-hardBlue text-white hover:bg-green">
+                    Check the source code
                   </button>
                 </a>
               </div>
@@ -171,7 +239,7 @@ function App() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Alterra Dashboard</h2>
-              <p>
+              <p className="mb-5">
                 Alterra dashboard is a project for cloning the Altera dashboard
                 website. The feature that I create is a list feature, and cards.
                 The technologies at the frontend side we use was ReactJS,
@@ -179,18 +247,18 @@ function App() {
               </p>
               <div className="card-actions justify-end">
                 <a href="https://github.com/ImmersiveDashboard/FE-Project-2">
-                  <button className="btn btn-primary">
-                    Check the source codee
+                  <button className="btn bg-hardBlue text-white hover:bg-green">
+                    Check the source code
                   </button>
                 </a>
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl bg-slate-300">
+          <div className="card w-96 bg-base-100 shadow-xl ">
             <figure>{/*    */}</figure>
             <div className="card-body">
               <h2 className="card-title">Kodiklatal Persuratan</h2>
-              <p>
+              <p className="mb-5">
                 Dashboard about mailing sytem at Kodiklatal TNI , in the era of
                 digitization 3.0, physical correspondence has begun to be
                 abandoned. then a system of internal correspondence was formed
@@ -198,14 +266,14 @@ function App() {
               </p>
               <div className="card-actions justify-end">
                 <a href="https://github.com/giaz231/Kodiklatal-TNI">
-                  <button className="btn btn-primary">
-                    Check the source codee
+                  <button className="btn bg-hardBlue text-white hover:bg-green">
+                    Check the source code
                   </button>
                 </a>
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl bg-slate-300">
+          <div className="card w-96 bg-base-100 shadow-xl ">
             <figure>
               {/* <img
                 src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -221,40 +289,56 @@ function App() {
               </p>
               <div className="card-actions justify-end">
                 <a href="https://github.com/giaz231/koperasipbs">
-                  <button className="btn btn-primary">
-                    Check the source codee
+                  <button className="btn bg-hardBlue text-white hover:bg-green">
+                    Check the source code
                   </button>
                 </a>
               </div>
             </div>
           </div>
         </section>
-        <div className="m-10 p-10"></div>
+        <div className="my-24 py-10">
+          <div className=" bg-white my-5 font-bold text-5xl text-center">
+            <p>Work Experience</p>
+          </div>
+          <div className="text-center">
+            <p>
+              <span>
+                Had tremendous experience of analis and develope project outside
+                the code
+              </span>
+              <br />
+              for only insipire me to coding
+            </p>
+          </div>
+        </div>
+
         <section className="flex flex-wrap justify-center">
           <div className="flex flex-row w-full">
             <div className="grid p-8 basis-2/5 w-96 card bg-lightBlue rounded-box place-items-center">
-              <ul>
-                <li className="font-bold">
-                  PRODUCT OPERATIONAL SPECIALIST (TEAM LEADER)
+              <ul className="list-disc grid gap-2">
+                <li className="list-none mb-4">
+                  <span className="font-bold ">
+                    PRODUCT OPERATIONAL SPECIALIST (TEAM LEADER)
+                  </span>
+                  <br /> Jakarta Smart City (Diskominfotik DKI JAKARTA)
                 </li>
-                <li className="mb-2">
-                  Jakarta Smart City (Diskominfotik DKI JAKARTA)
-                </li>
+
                 <li>
-                  • Making plans, curriculum, and/or scenarios for technical
+                  Making plans, curriculum, and/or scenarios for technical
                   guidance/training
                 </li>
                 <li>
-                  • Supporting instruments for technical
+                  Supporting instruments for technical
                   guidance/socialization/training
                 </li>
                 <li>
-                  • Engage and play an active role in System Integration Testing
+                  Engage and play an active role in System Integration Testing
                   (SIT), Functional Testing, and User Acceptance Testing (UAT)
                   for Mobile and/or Dashboard applications
                 </li>
                 <li>
-                  • Create a scenario, test case, and perform manual testing for
+                  Create a scenario, test case, and perform manual testing for
                   application or website developed by Jakarta Smart City at
                   System Integration Testing (SIT), Functional Testing, and User
                   Acceptance Testing (UAT) environment and also document
@@ -263,36 +347,41 @@ function App() {
                 </li>
               </ul>
             </div>
-            <div className="divider divider-horizontal basis-1/5">
+            <div className="divider divider-horizontal basis-1/5 ">
               February 2022 - Present
             </div>
-            <div className="grid h-20 basis-2/5 card  rounded-box place-items-center "></div>
+            <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
           </div>
+
           <div className="flex flex-row w-full">
-            <div className="grid h-20 basis-2/5 card  rounded-box place-items-center "></div>
-            <div className="divider divider-horizontal basis-1/5">
+            <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
+            <div className="divider divider-horizontal basis-1/5 ">
               February 2020 - January 2022
             </div>
             <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
-              <ul>
-                <li className="font-bold">TECHNICAL SUPPORT(TEAM LEADER)</li>
-                <li className="mb-2">
+              <ul className="list-disc grid gap-2">
+                <li className="list-none mb-4">
+                  <span className="font-bold">
+                    TECHNICAL SUPPORT(TEAM LEADER)
+                  </span>
+                  <br />
                   Jakarta Smart City (Diskominfotik DKI JAKARTA)
                 </li>
+
                 <li>
-                  • Collect and document (inventory): complaints or bugs related
+                  Collect and document (inventory): complaints or bugs related
                   to applications to be coordinated with the Technical Team
                   (Developer/Programmer); as well as requests submitted by the
                   applications' users to be coordinated with the Project/Product
                   Manager and System Analyst
                 </li>
                 <li>
-                  • Perform routine checking of application, such as checking
-                  API integration using Postman, and ensuring the application is
+                  Perform routine checking of application, such as checking API
+                  integration using Postman, and ensuring the application is
                   operating properly
                 </li>
                 <li>
-                  • Arrange socialization/technical guidance/training to users
+                  Arrange socialization/technical guidance/training to users
                   about application utilization, including preparing
                   plans/curriculum and compiling supporting instruments
                 </li>
@@ -300,18 +389,22 @@ function App() {
             </div>
           </div>
           <div className="flex flex-row w-full">
-            <div className="grid w-96 p-5 basis-2/5 card bg-lightBlue rounded-box place-items-center">
-              <ul>
-                <li className="font-bold">ENGINEER ON SITE</li>
-                <li className="mb-2">PT. Innovez Singapore </li>
-                <li>• Maintaning hardware and software system on site</li>
+            <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
+              <ul className="list-disc grid gap-2">
+                <li className="mb-2 list-none">
+                  <span className="font-bold">ENGINEER ON SITE</span>
+                  <br />
+                  PT. Innovez Singapore
+                </li>
+
+                <li>Maintaning hardware and software system on site</li>
                 <li>
-                  • Transfer knowledge about how to use webapp to non IT
+                  Transfer knowledge about how to use webapp to non IT
                   users(ship captain)
                 </li>
-                <li>• Report bugs to developers</li>
-                <li>• Daily report log</li>
-                <li>• Implement new digitalization shipping system</li>
+                <li>Report bugs to developers</li>
+                <li>Daily report log</li>
+                <li>Implement new digitalization shipping system</li>
               </ul>
             </div>
             <div className="divider divider-horizontal basis-1/5">
@@ -320,72 +413,72 @@ function App() {
             <div className="grid h-20 basis-2/5 card  rounded-box place-items-center "></div>
           </div>
           <div className="flex flex-row w-full">
-            <div className="grid h-20 basis-2/5 card  rounded-box place-items-center "></div>
+            <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
             <div className="divider divider-horizontal basis-1/5">
               2017 - 2018
             </div>
-            <div className="grid p-5 w-96 basis-2/5 card bg-lightBlue rounded-box place-items-center">
-              <ul>
-                <li className="font-bold">PLB/KM</li>
-                <li className="mb-2">PT. Transjakarta BUMD </li>
-                <li>• Operating traffic software bus</li>
-                <li>• Maintenance time arriving and deploy at bus stop</li>
+            <div className="grid p-8 w-96 basis-2/5 card bg-lightBlue rounded-box place-items-center">
+              <ul className="list-disc grid gap-2">
+                <li className="mb-2 list-none">
+                  <span className="font-bold">PLB/KM</span>
+                  <br />
+                  PT. Transjakarta BUMD
+                </li>
+
+                <li>Operating traffic software bus</li>
+                <li>Maintenance time arriving and deploy at bus stop</li>
                 <li>
-                  • High discipline with time sensitive shifting working hour
+                  High discipline with time sensitive shifting working hour
                 </li>
               </ul>
             </div>
           </div>
         </section>
-        <div className="m-10 mt-20 mb-20 p-14 bg-lightBlue shadow-2xl rounded-2xl text-hardBlue font-bold text-5xl text-center">
-          Certifications
+        <div className="flex flex-row my-20 py-10">
+          <div className="basis-1/2">
+            <img src={certif} alt="" />
+          </div>
+          <div className="basis-1/2 ">
+            <div className=" bg-white my-5 font-bold text-5xl ">
+              <p>Certification</p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  As tech always going forward , one cant have too much
+                  certificate
+                </span>
+              </p>
+            </div>
+
+            <ul className=" font-bold my-10">
+              <li className="flex  items-center">
+                <img src={check} alt="" className="w-10" />
+                <span className="px-3">
+                  Oracle : SQL and Extended SQL with Programming Feature (Issued
+                  by Gunadharma University 2016).
+                </span>
+              </li>
+
+              <li className="flex  items-center">
+                <img src={check} alt="" className="w-10" />
+                <span className="px-3">
+                  Penelitian Ilmiah : Game Berbasis Android Menggunakan Unity
+                  dengan Bahasa pemrograman C# (Issued by Gunadharma University
+                  Jan 2016).
+                </span>
+              </li>
+
+              <li className="flex  items-center">
+                <img src={check} alt="" className="w-10" />
+                <span className="px-3">
+                  Java Programming language Fundamental workshop (Issued by
+                  Gunadharma University 2016).
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <section className="flex flex-row w-full">
-          <div className="basis-1/4 flex justify-center items-center flex-col h-96">
-            <img className="mask mask-diamond w-48" src={fotoHero} />
-            <div className="m-8"></div>
-            <ul>
-              <li className="font-bold">
-                Oracle : SQL and Extended SQL with Programming Feature (Issued
-                by Gunadharma University 2016).
-              </li>
-            </ul>
-          </div>
-
-          <div className="basis-1/4 flex justify-center items-center flex-col">
-            <img className="mask mask-diamond w-48" src={fotoHero} />
-            <div className="m-6"></div>
-            <ul>
-              <li className="font-bold">
-                Penelitian Ilmiah : Game Berbasis Android Menggunakan Unity
-                dengan Bahasa pemrograman C# (Issued by Gunadharma University
-                Jan 2016).
-              </li>
-            </ul>
-          </div>
-
-          <div className="basis-1/4 flex justify-center items-center flex-col">
-            <img className="mask mask-diamond w-48" src={fotoHero} />
-            <div className="m-8"></div>
-            <ul>
-              <li className="font-bold">
-                Java Programming language Fundamental workshop (Issued by
-                Gunadharma University 2016).
-              </li>
-            </ul>
-          </div>
-
-          <div className="basis-1/4 flex justify-center items-center flex-col">
-            <img className="mask mask-diamond w-48" src={fotoHero} />
-            <div className="m-8"></div>
-            <ul>
-              <li className="font-bold">
-                Alterra Immersive Program Frontend Engineering (Issued by
-                Alterra Bootcamp 2022)
-              </li>
-            </ul>
-          </div>
-        </section>
       </div>
       <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
         <div className="grid grid-flow-col gap-4">
