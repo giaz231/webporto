@@ -19,7 +19,7 @@ import certif from "/certificate.png";
 function App() {
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-white text-hardBlue">
         <div className="mx-28 sticky top-0 z-10">
           <div className="navbar border-2  bg-base-100 shadow-xl rounded-3xl h-28 ">
             <div className="navbar-start">
@@ -97,20 +97,20 @@ function App() {
                     Muhammad Ghiyats Shufy
                   </h1>
                   <div className="py-6">
-                    <p className="text-md mb-5">
+                    <p className="text-md mb-5 text-black">
                       Enthusiast Developer with Product Operational Specialist
                       experience at a software company in the Jakarta City Hall.
                       I was responsible for the system implementation and
                       maintenance web apps, leading a team of 5 Product
                       Operational Specialist (POS).
                     </p>
-                    <p className="text-md mb-5">
+                    <p className="text-md mb-5 text-black">
                       I developed several project such as KSBB, SmartChange and
                       partial fiture CRM V1. Working closely with some
                       developers, I gained interest in programming area so I
                       decided to join Alterra Academy Frontend Bootcamp.
                     </p>
-                    <p className="text-md mb-5">
+                    <p className="text-md mb-5 text-black">
                       I built several project as FE engineer using ReactJS,
                       NextJS and several UI such as Tailwind CSS, Bootstrap,
                       Daisy UI, Chakra UI. Strive for perfection. Familiar with
@@ -179,11 +179,11 @@ function App() {
                 My <span className="mx-4"> ̶S̶w̶e̶a̶t̶ ̶a̶n̶d̶ ̶B̶l̶o̶o̶d̶ </span> Projects{" "}
               </p>
             </div>
-            <div className="text-center">
+            <div className="text-center text-black">
               <p>
                 <span>
                   Based on my work experiencei have plenty of product management
-                </span>{" "}
+                </span>
                 <br />
                 project but for this porto i only put programming project
               </p>
@@ -195,13 +195,13 @@ function App() {
                 <img src={ikuzsport} alt="logo" />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">Airbnb Clone Project</h2>
-                <p className="mb-5">
-                  Airbnb Clone Project is a website that provides hotels or
-                  homestays for rent when people are on vacation. The feature
-                  that I cloned was creating boards, lists, and cards. The
-                  technologies at the frontend side we use was NextJS, Tailwind
-                  css, and DaisyUI.
+                <h2 className="card-title">Ikuzsport</h2>
+                <p className="mb-5 text-black">
+                  Ikuzports is a wesbite to help you to find people who have the
+                  same hobbies, there is several fitur such as
+                  oauth,midtrans,chat box,pagination,filter,search. I worked as
+                  frontend and this project was build from scratch.The tech at
+                  the frontend side we use was ReactJS,Chakra UI and Redux
                 </p>
                 <div className="card-actions justify-end">
                   <a href="https://github.com/Capstone-Project-Group3-Ikuzports/FE-Ikuzports-CapstoneProject">
@@ -218,7 +218,7 @@ function App() {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Airbnb Clone Project</h2>
-                <p className="mb-5">
+                <p className="mb-5 text-black">
                   Airbnb Clone Project is a website that provides hotels or
                   homestays for rent when people are on vacation. The feature
                   that I cloned was creating boards, lists, and cards. The
@@ -240,7 +240,7 @@ function App() {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Alterra Dashboard</h2>
-                <p className="mb-5">
+                <p className="mb-5 text-black">
                   Alterra dashboard is a project for cloning the Altera
                   dashboard website. The feature that I create is a list
                   feature, and cards. The technologies at the frontend side we
@@ -259,7 +259,7 @@ function App() {
               <figure>{/*    */}</figure>
               <div className="card-body">
                 <h2 className="card-title">Kodiklatal Persuratan</h2>
-                <p className="mb-5">
+                <p className="mb-5 text-black">
                   Dashboard about mailing sytem at Kodiklatal TNI , in the era
                   of digitization 3.0, physical correspondence has begun to be
                   abandoned. then a system of internal correspondence was formed
@@ -284,7 +284,7 @@ function App() {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Koperasipbs</h2>
-                <p>
+                <p className="text-black">
                   Koperasipbs website is a cooperative website for prospective
                   ship captains who are concerned about retirement. The
                   technologies we use was PHP Native, Mysql.
@@ -303,7 +303,7 @@ function App() {
             <div className=" bg-white my-5 font-bold text-5xl text-center">
               <p>Work Experience</p>
             </div>
-            <div className="text-center">
+            <div className="text-center text-black">
               <p>
                 <span>
                   Had tremendous experience of analis and develope project
@@ -318,7 +318,7 @@ function App() {
           <section className="flex flex-wrap justify-center">
             <div className="flex flex-row w-full">
               <div className="grid p-8 basis-2/5 w-96 card bg-lightBlue rounded-box place-items-center">
-                <ul className="list-disc grid gap-2">
+                <ul className="list-disc grid gap-2 text-black">
                   <li className="list-none mb-4">
                     <span className="font-bold ">
                       PRODUCT OPERATIONAL SPECIALIST (TEAM LEADER)
@@ -360,7 +360,7 @@ function App() {
               <div className="divider divider-horizontal basis-1/5 ">
                 February 2020 - January 2022
               </div>
-              <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
+              <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center text-black">
                 <ul className="list-disc grid gap-2">
                   <li className="list-none mb-4">
                     <span className="font-bold">
@@ -392,7 +392,7 @@ function App() {
             </div>
             <div className="flex flex-row w-full">
               <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
-                <ul className="list-disc grid gap-2">
+                <ul className="list-disc grid gap-2 text-black">
                   <li className="mb-2 list-none">
                     <span className="font-bold">ENGINEER ON SITE</span>
                     <br />
@@ -420,7 +420,7 @@ function App() {
                 2017 - 2018
               </div>
               <div className="grid p-8 w-96 basis-2/5 card bg-lightBlue rounded-box place-items-center">
-                <ul className="list-disc grid gap-2">
+                <ul className="list-disc grid gap-2 text-black">
                   <li className="mb-2 list-none">
                     <span className="font-bold">PLB/KM</span>
                     <br />
@@ -444,7 +444,7 @@ function App() {
               <div className=" bg-white my-5 font-bold text-5xl ">
                 <p>Certification</p>
               </div>
-              <div>
+              <div className="text-black">
                 <p>
                   <span>
                     As tech always going forward , one cant have too much
