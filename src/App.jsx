@@ -132,44 +132,60 @@ function App() {
 
             <div className="flex flex-wrap  items-center gap-4">
               <div className="flex flex-wrap  items-center gap-4">
-                <img className="w-100 h-24" src={github} alt="" />{" "}
-                <span className="text-xl">Github</span>
+                <img className="w-24 h-24" src={github} alt="" />{" "}
+                <span className="text-xl box-sizing w-24 h-24  flex items-center">
+                  Github
+                </span>
               </div>
               <div className="flex flex-wrap  items-center gap-4">
-                <img className="w-100 h-24" src={mysql} alt="" />{" "}
-                <span className="text-xl">MySQL</span>
+                <img className="w-24 h-24" src={mysql} alt="" />{" "}
+                <span className="text-xl box-sizing w-24 h-24  flex items-center">
+                  MySQL
+                </span>
               </div>
             </div>
             <div className="flex flex-wrap  items-center gap-4">
               <div className="flex flex-wrap  items-center gap-4">
-                <img className="w-100 h-24" src={nodejs} alt="" />{" "}
-                <span className="text-xl">NodeJS</span>
+                <img className="w-24 h-24" src={nodejs} alt="" />{" "}
+                <span className="text-xl box-sizing w-24 h-24  flex items-center">
+                  NodeJS
+                </span>
               </div>
 
               <div className="flex flex-wrap  items-center gap-4">
-                <img className="w-100 h-24" src={figma} alt="" />{" "}
-                <span className="text-xl">Figma</span>
+                <img className="w-24 h-24" src={figma} alt="" />{" "}
+                <span className="text-xl box-sizing w-24 h-24  flex items-center">
+                  Figma
+                </span>
               </div>
             </div>
-            <div className="flex flex-wrap  items-center gap-4  ">
-              <div className="flex flex-wrap  items-center gap-4">
-                <img className="w-100 h-24" src={js} alt="" />{" "}
-                <span className="text-xl">Javascript</span>
+            <div className="flex flex-wrap  items-center gap-4 ">
+              <div className="flex flex-wrap  items-center gap-4 ">
+                <img className=" w-24 h-24" src={js} alt="" />{" "}
+                <span className="text-xl box-sizing w-24 h-24  flex items-center">
+                  Javascript
+                </span>
               </div>
 
-              <div className="flex flex-wrap  items-center gap-4">
-                <img className="w-100 h-24" src={react} alt="" />{" "}
-                <span className="text-xl">React</span>
+              <div className="flex flex-wrap  items-center gap-4 ">
+                <img className=" w-24 h-24 " src={react} alt="" />
+                <span className="text-xl box-sizing w-24 h-24  flex items-center ">
+                  React
+                </span>
               </div>
             </div>
             <div className="flex flex-wrap  items-center gap-4  ">
-              <div className="flex flex-wrap  items-center gap-4">
-                <img className="w-28 h-24" src={tailwind} alt="" />{" "}
-                <span className="text-xl">Tailwind</span>
+              <div className="flex flex-wrap   items-center gap-4">
+                <img className="w-24 h-24 w-100 h-24" src={tailwind} alt="" />
+                <span className="text-xl box-sizing w-24 h-24  flex items-center">
+                  Tailwind
+                </span>
               </div>
               <div className="flex flex-wrap  items-center gap-4">
-                <img className="w-100 h-24" src={postman} alt="" />{" "}
-                <span className="text-xl">Postman</span>
+                <img className="w-24 h-24" src={postman} alt="" />{" "}
+                <span className="text-xl box-sizing w-24 h-24  flex items-center">
+                  Postman
+                </span>
               </div>
             </div>
           </section>
