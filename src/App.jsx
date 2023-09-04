@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <div className="bg-white text-hardBlue">
-        <div className="mx-28 sticky top-0 z-10">
+        <div className="x-4 sm:mx-2 lg:mx-28 sticky top-0 z-10">
           <div className="navbar border-2  bg-base-100 shadow-xl rounded-3xl h-28 ">
             <div className="navbar-start">
               <div className="dropdown">
@@ -79,7 +79,7 @@ function App() {
             <div className="navbar-end"></div>
           </div>
         </div>
-        <div className="m-28 font-plus-jak ">
+        <div className="m-4 sm:m-2 lg:m-28 font-plus-jak ">
           <section>
             <div
               className="hero rounded-3xl min-h-screen bg-zinc-300"
@@ -90,7 +90,7 @@ function App() {
               <div className="hero-content flex-col lg:flex-row gap-10">
                 <img
                   src={foto}
-                  className="max-w-sm rounded-full shadow-2xl bg-white"
+                  className=" rounded-full shadow-2xl bg-white "
                 />
                 <div>
                   <h1 className="text-4xl font-bold text-black">
@@ -126,7 +126,7 @@ function App() {
             </div>
           </section>
           <section className="flex items-center mt-20 mb-20  pt-10 pb-10">
-            <div className="my-24 bg-white  font-bold text-5xl ">
+            <div className="my-24 bg-white  font-bold text-5xl max-sm:hidden ">
               The Tech I Muster
             </div>
 
@@ -332,14 +332,17 @@ function App() {
           </div>
 
           <section className="flex flex-wrap justify-center">
-            <div className="flex flex-row w-full">
-              <div className="grid p-8 basis-2/5 w-96 card bg-lightBlue rounded-box place-items-center">
+            <div className="flex flex-row w-full max-sm:grid">
+              <div className="grid p-8 basis-2/5 w-96 card bg-lightBlue rounded-box place-items-center ">
                 <ul className="list-disc grid gap-2 text-black">
                   <li className="list-none mb-4">
-                    <span className="font-bold ">
+                    <span className="font-bold text-lg ">
                       PRODUCT OPERATIONAL SPECIALIST (TEAM LEADER)
                     </span>
-                    <br /> Jakarta Smart City (Diskominfotik DKI JAKARTA)
+                    <br />
+                    <span className="font-normal text-regular text-slate-600">
+                      Jakarta Smart City (Diskominfotik DKI JAKARTA)
+                    </span>
                   </li>
 
                   <li>
@@ -365,25 +368,27 @@ function App() {
                   </li>
                 </ul>
               </div>
-              <div className="divider divider-horizontal basis-1/5 ">
+              <div className="divider divider-horizontal basis-1/5 max-sm:hidden">
                 February 2022 - Present
               </div>
               <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
             </div>
 
-            <div className="flex flex-row w-full">
+            <div className="flex flex-row w-full max-sm:grid">
               <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
-              <div className="divider divider-horizontal basis-1/5 ">
+              <div className="divider divider-horizontal basis-1/5 max-sm:hidden">
                 February 2020 - January 2022
               </div>
               <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center text-black">
                 <ul className="list-disc grid gap-2">
                   <li className="list-none mb-4">
-                    <span className="font-bold">
+                    <span className="font-bold text-lg">
                       TECHNICAL SUPPORT(TEAM LEADER)
                     </span>
                     <br />
-                    Jakarta Smart City (Diskominfotik DKI JAKARTA)
+                    <span className="font-normal text-regular text-slate-600">
+                      Jakarta Smart City (Diskominfotik DKI JAKARTA)
+                    </span>
                   </li>
 
                   <li>
@@ -406,13 +411,15 @@ function App() {
                 </ul>
               </div>
             </div>
-            <div className="flex flex-row w-full">
+            <div className="flex flex-row w-full max-sm:grid max-sm:my-20 max-sm:py-20">
               <div className="grid w-96 p-8 basis-2/5 card bg-lightBlue rounded-box place-items-center">
                 <ul className="list-disc grid gap-2 text-black">
                   <li className="mb-2 list-none">
-                    <span className="font-bold">ENGINEER ON SITE</span>
+                    <span className="font-bold text-lg">ENGINEER ON SITE</span>
                     <br />
-                    PT. Innovez Singapore
+                    <span className="font-normal text-regular text-slate-600">
+                      PT. Innovez Singapore
+                    </span>
                   </li>
 
                   <li>Maintaning hardware and software system on site</li>
@@ -425,22 +432,24 @@ function App() {
                   <li>Implement new digitalization shipping system</li>
                 </ul>
               </div>
-              <div className="divider divider-horizontal basis-1/5">
+              <div className="divider divider-horizontal basis-1/5 max-sm:hidden">
                 2018 - 2019
               </div>
               <div className="grid h-20 basis-2/5 card  rounded-box place-items-center "></div>
             </div>
-            <div className="flex flex-row w-full">
+            <div className="flex flex-row w-full max-sm:grid">
               <div className=" grid p-8 basis-2/5 w-96 card   rounded-box place-items-center "></div>
-              <div className="divider divider-horizontal basis-1/5">
+              <div className="divider divider-horizontal basis-1/5 max-sm:hidden">
                 2017 - 2018
               </div>
               <div className="grid p-8 w-96 basis-2/5 card bg-lightBlue rounded-box place-items-center">
                 <ul className="list-disc grid gap-2 text-black">
                   <li className="mb-2 list-none">
-                    <span className="font-bold">PLB/KM</span>
+                    <span className="font-bold text-lg">PLB/KM</span>
                     <br />
-                    PT. Transjakarta BUMD
+                    <span className="font-normal text-regular text-slate-600">
+                      PT. Transjakarta BUMD
+                    </span>
                   </li>
 
                   <li>Operating traffic software bus</li>
